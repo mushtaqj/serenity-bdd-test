@@ -9,6 +9,6 @@ import net.serenitybdd.screenplay.questions.Text;
 public class DisplayedArticle {
 
     public static Question<String> firstHeading() {
-        return Text.of("#firstHeading");
+        return Text.of("#firstHeading > span").asString();
     }
 }
